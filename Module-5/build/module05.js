@@ -29,10 +29,10 @@ class BuildArray {
         return this._sortOrder === 'ascending' ? this.sortAscending(array) : this.sortDescending(array);
     }
     sortAscending(array) {
-        array.sort((a, b) => a - b);
+        return array.sort((a, b) => a - b);
     }
     sortDescending(array) {
-        array.sort((a, b) => b - a);
+        return array.sort((a, b) => b - a);
     }
 }
 /*  TODO: Instantiate the BuildArray objects. */
